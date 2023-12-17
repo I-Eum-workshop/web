@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>이음 공방</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="pt-5 bg-dark">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">이음 공방</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+          aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+          <ul class="navbar-nav ms-auto my-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">홈</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">공방 소개</a></li>
+            <li class="nav-item"><a class="nav-link" href="Traditional_pin.html">머리장식</a></li>
+            <li class="nav-item"><a class="nav-link" href="keyring.html">열쇠고리</a></li>
+            <li class="nav-item"><a class="nav-link" href="oneday.html">일일체험</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="d-flex flex-column justify-content-center vh-100 text-white">
+      <h1 class="display-3 fw-bold mb-2">&nbsp;이음 공방</h1>
+      <h6 class="fs-2 mb-3">&nbsp;&nbsp;일상 속에서 전통을 느끼다</h6>
+    </header>
+
+    <section class="bg-dark mx-auto py-5 d-flex align-content-center flex-wrap" style="height: auto;">  
+      <h4 class="text-white mb-3" style="padding-top: 10%;">&nbsp;장신구</h4>
+      <div class="row" style="padding-bottom: 10%;">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/pin_red.png.jpg" class="card-img" alt="뒤꽂이 사진1">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/keyring.jpg" class="card-img" alt="열쇠고리 사진">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/pin_blue.png.jpg" class="card-img" alt="뒤꽂이 사진2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark py-5" style="height: auto;">
+      <div class="row" style="padding: 5%;">
+        <div class="col-lg-6">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1579.9742374421155!2d127.09140951251163!3d37.62689977790834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb91de277d145%3A0x57a8a7cc143ffb32!2z7ISc7Jq47Jes7J6Q64yA7ZWZ6rWQIDUw7KO864WE6riw64WQ6rSA!5e0!3m2!1sko!2skr!4v1702359865033!5m2!1sko!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+          </div>
+        </div>
+        <div class="col-lg-6" style="border: solid 2px white; padding: 30px">
+          <h4 class="text-white">주소</h4>
+          <p class="text-white">서울특별시 노원구 화랑로 621</p>
+          <br>
+          <br>
+          <h4 class="text-white">연락처</h4>
+          <p class="text-white">전화번호 : 010-0000-0000</p>
+          <p class="text-white">이메일 : email123@mail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="top" style="width: 60px; height: 60px;">↑</button>
+
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
